@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+/* Generic
+   ========================================================================== */
+
+.section__heading {
+  margin-bottom: 2rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+cite {
+  font-style: normal;  
+}
+
+cite::before {
+  content: open-quote;
+}
+
+cite::after {
+  content: close-quote;
+}
+
+.work {
+  margin-bottom: 1rem;
+}
+
+.font-noto-sans-kr {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.jumbotron {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-bottom: 0;
+  background-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+  .jumbotron-heading {
+    font-weight: 300;
+  }
+
+/**
+* 현재 Bootstrap v4의 card에 포함된 이미지 찌그러짐 버그로 인해
+* 아래와 같이 card 클래스의 display 속성을 block으로 지정해 주어야 함.
+* https://github.com/twbs/bootstrap/issues/21885
+*/  
+.card {
+  display: block;
+}
+
+.card-link + .card-link {
+  margin-left: 0;
+}
+
+.card-img-link {
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+
+.body__heading {
+  font-size: 1.3rem;
+}
+
+.email-link {
+  color: white;
+}
+.email-link:hover {
+  color: hsl(0, 0%, 80%);
+  text-decoration: none;
+}
+   
+
+/* #current
+   ========================================================================== */
+
+.current .card-header {
+  background-color: #6c757d;  
+}
+
+  .current__heading {
+    font-size: 1.05rem;
+    margin-bottom: 0;
+    color: white;
+  }
+
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle; /* svg attribute */
+  }
+
+
+/* #past
+   ========================================================================== */
+
+.past .card {
+  border: none;
+}
+
+.past .card-header {
+  background-color: #6c757d;  
+}
+
+  .past__heading {
+    font-size: 1.05rem;
+    margin-bottom: 0;
+    color: white;
+  }
+
+  .past__month {
+    color: #6c757d;
+    padding-left: 0.25rem;
+  }
+
+
+/* #footer
+   ========================================================================== */
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+  
