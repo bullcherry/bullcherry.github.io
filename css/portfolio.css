@@ -40,8 +40,8 @@ cite::after {
 
 @media (min-width: 768px) {
   .jumbotron {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 }
 
@@ -98,6 +98,7 @@ cite::after {
 
   .current__heading {
     font-size: 1.05rem;
+    font-weight: bold;
     margin-bottom: 0;
     color: white;
   }
